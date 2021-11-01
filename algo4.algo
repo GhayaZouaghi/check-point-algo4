@@ -6,7 +6,7 @@ BEGIN
   
     for (i = 1; i < n; i++)
     { 
-        key = tab[i]; 
+        aux = tab[i]; 
         j = i - 1; 
 
         while (j >= 0 && tab[j] > aux)
@@ -14,7 +14,7 @@ BEGIN
             tab[j + 1] = tab[j]; 
             j = j - 1; 
         } 
-        tab[j + 1] = key; 
+        tab[j + 1] = aux; 
     } 
 
    END
